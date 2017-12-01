@@ -47,3 +47,9 @@ title('Normalização do olho 1');
 figure
 imshow(Cartesiano2);
 title('Normalização do olho 2');
+
+res1 = filtrogabor(Cartesiano1, 18, 0.5);
+res2 = filtrogabor(Cartesiano2, 18, 0.5);
+
+figure;imshow(res1);
+figure;imshow(res2);
