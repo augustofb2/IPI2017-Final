@@ -1,6 +1,6 @@
 clc 
 I1 = imread('Img_005_L_5.bmp');
-I2 = imread('Img_005_L_4.bmp');
+I2 = imread('Img_005_R_4.bmp');
 distancia = 0;
 %Foram criadas funçoes para a segmentação e normalização da pupila
 
@@ -61,3 +61,5 @@ iriscode2 = codificaIris(res2);
 
 figure;imshow(iriscode1);
 figure;imshow(iriscode2);
+
+dist = HammingDistance(iriscode1, iriscode2)
