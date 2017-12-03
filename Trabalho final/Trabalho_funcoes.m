@@ -1,5 +1,5 @@
 clc 
-I1 = imread('Img_005_L_5.bmp');
+I1 = imread('Img_005_R_1.bmp');
 I2 = imread('Img_005_R_4.bmp');
 distancia = 0;
 %Foram criadas funçoes para a segmentação e normalização da pupila

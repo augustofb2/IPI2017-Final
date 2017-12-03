@@ -15,9 +15,9 @@ for desloc = -6:6
     deslocado = deslocaBits(iriscode1, desloc);
     
     N = size(iriscode1, 1) * size(iriscode1, 2) - (25*(115 - 2*abs(desloc)));
-    S = xor(deslocado, iriscode2);              %Ignora mascara da palpebra
+    S = xor(deslocado, iriscode2);              %
     
-    dif = sum(sum(S == 1));
+    dif = sum(sum(S==1));
     
     dist = dif/N;
     
